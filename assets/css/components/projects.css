@@ -1,7 +1,7 @@
 /* Seção Portfólio (Projetos) - Tema Light */
 .projects-section {
     padding: 50px 0;
-    background-color: var(--bg-secondary); /* Fundo cinza claro para destacar a seção */
+    background-color: #eef4ff;
 }
 
 .projects-filter {
@@ -39,9 +39,8 @@
 
 .projects-grid {
     display: grid;
-    /* Cria uma grade responsiva que se adapta ao tamanho da tela */
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); 
+    gap: 40px;
 }
 
 .project-card {
@@ -56,8 +55,8 @@
 }
 
 .project-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+    transform: translateY(-12px);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.12);
 }
 
 .project-image-container {

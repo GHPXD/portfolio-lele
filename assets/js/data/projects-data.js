@@ -63,5 +63,25 @@ const projectsData = {
                 { text: 'Visitar Site Ao Vivo', url: '#' }
             ]
         }
+    },
+    'Teste 02': {
+        category: 'web-design',
+        image: './assets/media/projects/teste3.png',
+        tech: ['figma', 'adobexd'],
+        caseStudy: {
+            description: `
+                <h3>O Desafio</h3>
+                <p>Criar um website de portfólio para um fotógrafo que fosse minimalista e elegante, colocando as fotografias como o principal destaque. O site precisava ser totalmente responsivo e ter um desempenho rápido.</p>
+                <h3>A Solução</h3>
+                <p>Desenvolvi um layout baseado em grade que valoriza o impacto visual das imagens. A navegação foi simplificada ao máximo, e a paleta de cores neutras ajuda a não competir com as fotografias. O design foi prototipado no Figma e validado para garantir uma experiência de visualização impecável em todos os dispositivos.</p>
+            `,
+            gallery: [
+                'https://via.placeholder.com/800x1000.png/D3D3D3/000000?text=Página+Inicial+(Desktop)',
+                'https://via.placeholder.com/400x800.png/C0C0C0/000000?text=Página+Inicial+(Mobile)'
+            ],
+            links: [
+                { text: 'Visitar Site Ao Vivo', url: '#' }
+            ]
+        }
     }
 };
