@@ -1,10 +1,10 @@
-/* Variáveis de Cores */
+/* Variáveis de Cores - Tema Light para Design */
 :root {
-    --bg-primary: #ffffff;
-    --bg-secondary: #ffffff;
-    --text-primary: #ffffff;
-    --text-secondary: #000000;
-    --accent-blue: #3b82f6;
-    --accent-green: #10b981;
-    --accent-red: #ef4444;
+    --bg-primary: #FFFFFF; /* Fundo principal branco */
+    --bg-secondary: #F8F9FA; /* Um cinza muito claro para seções */
+    --text-primary: #1F2937; /* Cor de texto principal (quase preto) */
+    --text-secondary: #6B7280; /* Cor de texto secundário (cinza) */
+    --accent-blue: #007BFF; /* Azul para links e botões */
+    --accent-purple: #6F42C1; /* Roxo para detalhes e destaques */
+    --border-color: #E5E7EB; /* Cor para bordas sutis */
 }

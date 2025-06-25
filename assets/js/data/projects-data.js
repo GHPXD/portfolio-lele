@@ -1,67 +1,67 @@
-// Dados dos projetos
-
-//DATA
+// Dados dos projetos de design (nova estrutura)
 const projectsData = {
-    'Análise de Reviews Negativos com PySpark': {
-        repo: 'https://github.com/GHPXD/Comparison-of-Negative-Movie-Reviews',
-        readme: './assets/docs/Comparison of Negative Movie Reviews.md',
-        tech: ['python', 'pandas', 'pyplot', 'pyspark'],
-        image: './assets/media/projects/Analise_Reviews_PySpark.png',
-        category: 'Data'
+    'Redesign de App de E-commerce': {
+        category: 'ui-ux',
+        image: 'https://via.placeholder.com/400x300.png/007BFF/FFFFFF?text=Projeto+1',
+        tech: ['figma', 'illustrator', 'photoshop'],
+        caseStudy: {
+            description: `
+                <h3>O Desafio</h3>
+                <p>O aplicativo de e-commerce existente enfrentava baixas taxas de conversão e muitas reclamações sobre uma interface confusa e um processo de checkout complicado. O desafio era redesenhar a experiência do usuário para torná-la mais intuitiva, agradável e eficiente.</p>
+                <h3>A Solução</h3>
+                <p>Realizei uma pesquisa aprofundada com usuários, criei personas e jornadas de usuário para identificar os principais pontos de dor. Com base nisso, desenvolvi wireframes de baixa e alta fidelidade, focando em uma navegação simplificada e um fluxo de checkout de uma página. O resultado foi um design limpo, moderno e centrado no usuário, que levou a um aumento de 25% na conversão e melhorou significativamente a satisfação do cliente.</p>
+            `,
+            gallery: [
+                'https://via.placeholder.com/800x600.png/D3D3D3/000000?text=Fluxo+de+Usuário',
+                'https://via.placeholder.com/800x600.png/C0C0C0/000000?text=Wireframes',
+                'https://via.placeholder.com/800x600.png/A9A9A9/000000?text=Tela+Final+1',
+                'https://via.placeholder.com/800x600.png/808080/FFFFFF?text=Tela+Final+2'
+            ],
+            links: [
+                { text: 'Ver Protótipo Interativo', url: '#' },
+                { text: 'Ler Estudo de Caso Completo', url: '#' }
+            ]
+        }
     },
-    'Insight de Casos de Covid-19': {
-        repo: 'https://github.com/GHPXD/Pycovid',
-        readme: './assets/docs/Pycovid.md',
-        tech: ['python', 'pandas', 'numpy', 'matplotlib', 'seaborn', 'plotly', 'dash', 'tkinter'], 
-        image: './assets/media/projects/PyCovid.png',
-        category: 'Data'
+    'Identidade Visual para Cafeteria': {
+        category: 'branding',
+        image: 'https://via.placeholder.com/400x300.png/6F42C1/FFFFFF?text=Projeto+2',
+        tech: ['illustrator', 'photoshop'],
+        caseStudy: {
+            description: `
+                <h3>O Desafio</h3>
+                <p>Uma nova cafeteria local precisava de uma identidade visual completa que transmitisse uma sensação de aconchego, modernidade e qualidade artesanal. O objetivo era criar uma marca memorável que se destacasse no mercado.</p>
+                <h3>A Solução</h3>
+                <p>O processo começou com a definição da personalidade da marca, resultando na criação de um logotipo versátil, uma paleta de cores quentes e uma tipografia amigável. A identidade foi aplicada em todos os pontos de contato: embalagens, cardápios, sinalização da loja e mídias sociais, criando uma experiência de marca coesa e convidativa.</p>
+            `,
+            gallery: [
+                'https://via.placeholder.com/800x600.png/D3D3D3/000000?text=Logo+e+Variações',
+                'https://via.placeholder.com/800x600.png/C0C0C0/000000?text=Embalagens',
+                'https://via.placeholder.com/800x600.png/A9A9A9/000000?text=Aplicação+em+Mockup'
+            ],
+            links: [
+                { text: 'Ver Guia da Marca', url: '#' }
+            ]
+        }
     },
-    'Extrator Nota Fiscal': {
-        repo: 'https://github.com/GHPXD/pdf-extractor',
-        readme: './assets/docs/Extrator Nota Fiscal.md',
-        tech: ['python', 'pandas', 'numpy','seaborn', 'matplotlib', 'pdf2image', 'tkinter', 'selenium', 'tensorflow', 'pytesseract'],
-        image: './assets/media/projects/Extrator Nota Fiscal.png',
-        category: 'Data'
-    },
-
-
-
-// AUTOMAÇÃO
-    'Automação de Aprovação de Tarefas - Sistema CAP': {
-        repo: 'https://github.com/GHPXD/CAP',
-        readme: './assets/docs/CAP.md',
-        tech: ['python', 'pandas', 'selenium', 'tkinter'],
-        image: './assets/media/projects/CAP.png',
-        category: 'Automacao'
-    },
-    
-
-
-// WEB    
-    'Jump Man Game': {
-        repo: 'https://ghpxd.github.io/run-man/',
-        readme: './assets/docs/Run Man Jump.md',
-        tech: ['html', 'css', 'javascript'],
-        image: './assets/media/projects/jump-man-run.png',
-        category: 'Web'
-    },
-    'Jokenpo Game': {
-        repo: 'https://ghpxd.github.io/Jokenpo/',
-        readme: './assets/docs/Jokenpo.md',
-        tech: ['html', 'css', 'javascript'],
-        image: './assets/media/projects/Jokenpo.png',
-        category: 'Web'
-    },
-
-
-
-// BACK-END
-    'Sistema Pet Shop': {
-        repo: 'https://github.com/GHPXD/pet',
-        readme: './assets/docs/Petshop.md',
-        tech: ['java', 'spring-boot', 'spring-security', 'jwt', 'postgresql', 'maven', 'swagger'],
-        image: './assets/media/projects/petshop.png',
-        category: 'Backend'
-    },
-    
+    'Website para Fotógrafo Profissional': {
+        category: 'web-design',
+        image: 'https://via.placeholder.com/400x300.png/1F2937/FFFFFF?text=Projeto+3',
+        tech: ['figma', 'adobexd'],
+        caseStudy: {
+            description: `
+                <h3>O Desafio</h3>
+                <p>Criar um website de portfólio para um fotógrafo que fosse minimalista e elegante, colocando as fotografias como o principal destaque. O site precisava ser totalmente responsivo e ter um desempenho rápido.</p>
+                <h3>A Solução</h3>
+                <p>Desenvolvi um layout baseado em grade que valoriza o impacto visual das imagens. A navegação foi simplificada ao máximo, e a paleta de cores neutras ajuda a não competir com as fotografias. O design foi prototipado no Figma e validado para garantir uma experiência de visualização impecável em todos os dispositivos.</p>
+            `,
+            gallery: [
+                'https://via.placeholder.com/800x1000.png/D3D3D3/000000?text=Página+Inicial+(Desktop)',
+                'https://via.placeholder.com/400x800.png/C0C0C0/000000?text=Página+Inicial+(Mobile)'
+            ],
+            links: [
+                { text: 'Visitar Site Ao Vivo', url: '#' }
+            ]
+        }
+    }
 };

@@ -6,13 +6,11 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-image: url(../../../assets/media/background.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: var(--bg-primary);
+    font-family: 'Inter', sans-serif; /* Sugestão de nova fonte */
+    background-color: var(--bg-primary); /* Usa a nova cor de fundo */
+    color: var(--text-primary); /* Usa a nova cor de texto */
     line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s; /* Para futuras animações de tema */
 }
 
 .page-container {

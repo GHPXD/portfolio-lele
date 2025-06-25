@@ -1,54 +1,25 @@
-// Dados dos certificados
+// Dados dos certificados de Design
 const certificatesData = {
-
-    // Fullstack
-    'Santander Bootcamp 2023 - Fullstack Java + Angular': {
-        image: ['./assets/media/certificates/JAVA-ANGULAR.jpg'],
-        category: 'full'
-    },
-
-
-
-    // Backend
-
-
-
-    // Frontend
-
-
-
-    // Dados
-    'Programa Desenvolve Boticario': {
+    // Exemplo de certificado de UI/UX
+    'UI/UX Design Career Path': {
         image: [
-            './assets/media/certificates/Programa_Desenvolve01.png', 
-            './assets/media/certificates/Programa_Desenvolve02.png'
+            './assets/media/certificates/frente-certificado-uiux.jpg', // Caminho para a imagem da frente
+            './assets/media/certificates/verso-certificado-uiux.jpg'  // Caminho para a imagem do verso (opcional)
         ],
-        category: 'dados'
+        category: 'ui-ux' // Categoria para o filtro
     },
 
-    'Santander Bootcamp 2023 - Ciencia de Dados com Python': {
-        image: ['./assets/media/certificates/Ciencia de Dados com Python.png'],
-        category: 'dados'
+    // Exemplo de certificado de ferramenta
+    'Adobe Illustrator CC – Essencial': {
+        image: ['./assets/media/certificates/frente-certificado-illustrator.jpg'], // Apenas uma imagem
+        category: 'ferramentas'
     },
 
-
-
-    // Diversos
-    'Certificado Yellow Belt': {
-        image: [
-            './assets/media/certificates/Yellow Belt01.jpg',
-            './assets/media/certificates/Yellow Belt02.jpg'
-        ],
-        category: 'diversos'
-    },
-
-    'GIT - Básico ao avançado': {
-        image: ['./assets/media/certificates/Git.jpg'],
-        category: 'diversos'
+    // Exemplo de certificado geral
+    'Fundamentos do Design Gráfico': {
+        image: ['./assets/media/certificates/frente-certificado-fundamentos.jpg'],
+        category: 'geral'
     },
     
-    'Campus DIO Expert': {
-        image: ['./assets/media/certificates/Dio Campus Expert.png'],
-        category: 'diversos'
-    }
+    // Adicione mais certificados aqui...
 };

@@ -1,105 +1,44 @@
-/* Seção Certificados */
+/* Seção Certificados - Tema Light */
 .certificates-section {
-    margin-bottom: 50px;
+    padding: 50px 0;
 }
 
 .certificates-filter {
     display: flex;
     gap: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
-.certificates-filter button {
-    padding: 8px 15px;
-    background-color: #e5e7eb;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
+/* O estilo dos botões de filtro (.filter-btn) já está definido em projects.css,
+   então não precisamos repetir aqui, ele será herdado. */
 
-.certificates-filter button:hover {
-    background-color: #1c67d7;
-    color: var(--bg-primary);
-}
-
-.certificates-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.certificate-card {
-    background-color: white;
-    color: var(--text-primary);
-    border-radius: 10px;
-    padding: 25px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.certificate-card h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-}
-
-.certificate-card p {
-    color: var(--text-primary);
-    margin-bottom: 15px;
-}
-
-.certificate-card img {
-    width: 100%; /* Largura completa do contêiner */
-    height: 200px; /* Altura fixa para todas as imagens */
-    object-fit: cover; /* Ajuste a imagem sem distorção */
-    border-radius: 5px; /* Bordas arredondadas para as imagens */
-}
-
-.certificate-tag {
-    display: inline-block;
-    padding: 5px 15px;
-    border-radius: 20px;
-    font-size: 0.9rem;
-}
-
-.certificate-tag.full { background-color: #dbeafe; color: #1e40af; }
-.certificate-tag.back { background-color: #d1fae5; color: #065f46; }
-.certificate-tag.front { background-color: #fee2e2; color: #991b1b; }
-.certificate-tag.diversos { background-color: #201c1c; color: #fff; }
-
-/* Container do Carrossel de Certificados */
 .certificates-carousel-container {
     position: relative;
     width: 100%;
     overflow: hidden;
-    border-radius: 15px;
-    background: transparent;
-    padding: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    padding: 10px 0;
 }
 
 .certificates-carousel-wrapper {
     overflow: hidden;
     width: 100%;
-    position: relative;
 }
 
 .certificates-carousel {
     display: flex;
     transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    gap: 25px;
-    padding: 10px 0;
+    gap: 30px;
 }
 
 /* Cards de Certificados no Carrossel */
 .carousel-certificate-card {
-    flex: 0 0 350px;
+    flex: 0 0 350px; /* Largura do card */
     background-color: white;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.07);
     transition: all 0.4s ease;
     cursor: pointer;
     position: relative;
@@ -107,7 +46,7 @@
 
 .carousel-certificate-card:hover {
     transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
 }
 
 .carousel-certificate-image-container {
@@ -115,6 +54,7 @@
     width: 100%;
     height: 220px;
     overflow: hidden;
+    background-color: var(--bg-secondary);
 }
 
 .carousel-certificate-image-container img {
@@ -134,7 +74,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(59, 130, 246, 0.9), rgba(147, 51, 234, 0.9));
+    background: linear-gradient(135deg, rgba(0, 123, 255, 0.85), rgba(111, 66, 193, 0.85)); /* Gradiente com as cores de destaque */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -160,39 +100,40 @@
     display: flex;
     justify-content: center;
     padding: 20px;
-    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    background-color: var(--bg-secondary);
 }
 
 .carousel-certificate-tag {
     display: inline-block;
-    padding: 8px 16px;
+    padding: 8px 18px;
     border-radius: 20px;
     font-size: 0.9rem;
     font-weight: 600;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
-.carousel-certificate-tag.full { background-color: #dbeafe; color: #1e40af; }
-.carousel-certificate-tag.back { background-color: #d1fae5; color: #065f46; }
-.carousel-certificate-tag.front { background-color: #fee2e2; color: #991b1b; }
-.carousel-certificate-tag.dados { background-color: #fef3c7; color: #92400e; }
-.carousel-certificate-tag.diversos { background-color: #1f2937; color: #fff; }
+/* Cores das tags de categoria (ajuste conforme as categorias que criar) */
+.carousel-certificate-tag.ui-ux { background-color: #dbeafe; color: #1e40af; }
+.carousel-certificate-tag.branding { background-color: #d1fae5; color: #065f46; }
+.carousel-certificate-tag.ferramentas { background-color: #fee2e2; color: #991b1b; }
+.carousel-certificate-tag.geral { background-color: #e5e7eb; color: #1f2937; }
 
-/* Controles do Carrossel de Certificados */
+
+/* Controles do Carrossel */
 .certificates-carousel-controls {
     position: absolute;
     top: 50%;
+    transform: translateY(-50%);
     width: 100%;
     display: flex;
     justify-content: space-between;
     pointer-events: none;
-    z-index: 10;
 }
 
 .certificates-carousel-btn {
-    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-    color: white;
-    border: none;
+    background: white;
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -203,101 +144,26 @@
     font-size: 18px;
     transition: all 0.3s ease;
     pointer-events: all;
-    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
-    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 .certificates-carousel-btn:hover {
-    background: linear-gradient(135deg, #1d4ed8, #1e40af);
+    background: var(--accent-blue);
+    color: white;
+    border-color: var(--accent-blue);
     transform: scale(1.1);
-    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.6);
 }
 
-.certificates-carousel-btn:active {
-    transform: scale(0.95);
-}
+.certificates-carousel-btn.prev-btn { left: -25px; }
+.certificates-carousel-btn.next-btn { right: -25px; }
 
-.certificates-carousel-btn.prev-btn {
-    left: -25px;
-}
-
-.certificates-carousel-btn.next-btn {
-    right: -25px;
-}
-
-/* Responsividade para Carrossel de Certificados */
-@media screen and (max-width: 1200px) {
-    .carousel-certificate-card {
-        flex: 0 0 320px;
-    }
-}
-
+/* Responsividade */
 @media screen and (max-width: 992px) {
-    .carousel-certificate-card {
-        flex: 0 0 280px;
-    }
-    
-    .carousel-certificate-image-container {
-        height: 180px;
-    }
-    
-    .certificates-carousel-btn {
-        width: 45px;
-        height: 45px;
-        font-size: 16px;
-    }
-
-    .certificates-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+    .carousel-certificate-card { flex: 0 0 320px; }
 }
 
 @media screen and (max-width: 768px) {
-    .carousel-certificate-card {
-        flex: 0 0 250px;
-    }
-    
-    .carousel-certificate-image-container {
-        height: 160px;
-    }
-    
-    .carousel-certificate-title {
-        font-size: 1.1rem;
-    }
-    
-    .certificates-carousel-btn.prev-btn {
-        left: -20px;
-    }
-    
-    .certificates-carousel-btn.next-btn {
-        right: -20px;
-    }
-
-    .certificates-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .carousel-certificate-card {
-        flex: 0 0 220px;
-    }
-    
-    .carousel-certificate-image-container {
-        height: 140px;
-    }
-    
-    .certificates-carousel-btn {
-        width: 40px;
-        height: 40px;
-        font-size: 14px;
-    }
-    
-    .certificates-carousel-btn.prev-btn {
-        left: -15px;
-    }
-    
-    .certificates-carousel-btn.next-btn {
-        right: -15px;
-    }
+    .carousel-certificate-card { flex: 0 0 280px; }
+    .certificates-carousel-btn.prev-btn { left: 10px; }
+    .certificates-carousel-btn.next-btn { right: 10px; }
 }
