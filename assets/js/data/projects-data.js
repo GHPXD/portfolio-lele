@@ -2,7 +2,7 @@
 const projectsData = {
     'Redesign de App de E-commerce': {
         category: 'ui-ux',
-        image: 'https://via.placeholder.com/400x300.png/007BFF/FFFFFF?text=Projeto+1',
+        image: './assets/media/projects/teste1.png',
         tech: ['figma', 'illustrator', 'photoshop'],
         caseStudy: {
             description: `
@@ -12,7 +12,7 @@ const projectsData = {
                 <p>Realizei uma pesquisa aprofundada com usuários, criei personas e jornadas de usuário para identificar os principais pontos de dor. Com base nisso, desenvolvi wireframes de baixa e alta fidelidade, focando em uma navegação simplificada e um fluxo de checkout de uma página. O resultado foi um design limpo, moderno e centrado no usuário, que levou a um aumento de 25% na conversão e melhorou significativamente a satisfação do cliente.</p>
             `,
             gallery: [
-                'https://via.placeholder.com/800x600.png/D3D3D3/000000?text=Fluxo+de+Usuário',
+                './assets/media/projects/petshop.png',
                 'https://via.placeholder.com/800x600.png/C0C0C0/000000?text=Wireframes',
                 'https://via.placeholder.com/800x600.png/A9A9A9/000000?text=Tela+Final+1',
                 'https://via.placeholder.com/800x600.png/808080/FFFFFF?text=Tela+Final+2'
@@ -25,7 +25,7 @@ const projectsData = {
     },
     'Identidade Visual para Cafeteria': {
         category: 'branding',
-        image: 'https://via.placeholder.com/400x300.png/6F42C1/FFFFFF?text=Projeto+2',
+        image: './assets/media/projects/teste2.png',
         tech: ['illustrator', 'photoshop'],
         caseStudy: {
             description: `
@@ -35,8 +35,8 @@ const projectsData = {
                 <p>O processo começou com a definição da personalidade da marca, resultando na criação de um logotipo versátil, uma paleta de cores quentes e uma tipografia amigável. A identidade foi aplicada em todos os pontos de contato: embalagens, cardápios, sinalização da loja e mídias sociais, criando uma experiência de marca coesa e convidativa.</p>
             `,
             gallery: [
-                'https://via.placeholder.com/800x600.png/D3D3D3/000000?text=Logo+e+Variações',
-                'https://via.placeholder.com/800x600.png/C0C0C0/000000?text=Embalagens',
+                './assets/media/projects/teste1.png',
+                './assets/media/projects/petshop.png',
                 'https://via.placeholder.com/800x600.png/A9A9A9/000000?text=Aplicação+em+Mockup'
             ],
             links: [
@@ -46,7 +46,7 @@ const projectsData = {
     },
     'Website para Fotógrafo Profissional': {
         category: 'web-design',
-        image: 'https://via.placeholder.com/400x300.png/1F2937/FFFFFF?text=Projeto+3',
+        image: './assets/media/projects/teste3.png',
         tech: ['figma', 'adobexd'],
         caseStudy: {
             description: `
